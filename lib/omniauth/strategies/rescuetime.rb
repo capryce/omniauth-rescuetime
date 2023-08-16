@@ -8,7 +8,7 @@ module OmniAuth
       option :client_options, {
         site: 'https://www.rescuetime.com',
         authorize_url: '/oauth/authorize',
-        token_url: '/oauth2/token'
+        token_url: '/oauth/token'
       }
 
       option :redirect_url
