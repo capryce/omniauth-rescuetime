@@ -1,10 +1,9 @@
-# -*- encoding: utf-8 -*-
-$:.push File.expand_path('../lib', __FILE__)
+$:.push File.expand_path('lib', __dir__)
 require 'omniauth/rescuetime/version'
 
 Gem::Specification.new do |s|
   s.name     = 'omniauth-rescuetime'
-  s.version  = OmniAuth::RescueTime::VERSION
+  s.version  = OmniAuth::Rescuetime::VERSION
   s.authors  = ['Adrian Randall']
   s.email    = ['adrian@arcadiandigital.com.au']
   s.summary  = 'Rescue Time strategy for OmniAuth'
@@ -15,6 +14,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_development_dependency 'rspec'
   s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
 end
